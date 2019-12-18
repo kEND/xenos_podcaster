@@ -1,0 +1,802 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>Elixir Mix</title>
+    <description>
+      <![CDATA[Elixir Mix is a weekly show focused on the Elixir programming community. Our panel discusses topics around functional programming, the Elixir ecosystem, and building real world apps with Elixir based tools and frameworks.]]>
+    </description>
+    <link>https://devchat.tv/elixir-mix</link>
+    <language>en</language>
+    <managingEditor>chuck@devchat.tv</managingEditor>
+    <webMaster>chuck@devchat.tv</webMaster>
+    <copyright>2018 Intentional Excellence Productions, LLC</copyright>
+    <lastBuildDate>Tue, 17 Dec 2019 06:00:40 -0500</lastBuildDate>
+    <image>
+      <link>https://devchat.tv/elixir-mix</link>
+      <url>https://s3.amazonaws.com/devchat.tv/elixirmix.jpg</url>
+      <title>Elixir Mix</title>
+    </image>
+    <category>elixir</category>
+    <category>erlang</category>
+    <category>programming</category>
+    <category>code</category>
+    <category>software</category>
+    <category>development</category>
+    <category>developer</category>
+    <category>functional</category>
+    <itunes:subtitle>A weekly exploration into the people who make Elixir what it is.</itunes:subtitle>
+    <itunes:author>Devchat.tv</itunes:author>
+    <itunes:summary>
+      <![CDATA[Elixir Mix is a weekly show focused on the Elixir programming community. Our panel discusses topics around functional programming, the Elixir ecosystem, and building real world apps with Elixir based tools and frameworks.]]>
+    </itunes:summary>
+    <itunes:explicit>no</itunes:explicit>
+    <itunes:keywords>elixir, erlang, programming, code, software, development, developer, functional</itunes:keywords>
+    <itunes:owner>
+      <itunes:name>Charles Max Wood</itunes:name>
+      <itunes:email>chuck@devchat.tv</itunes:email>
+    </itunes:owner>
+    <itunes:image href="https://s3.amazonaws.com/devchat.tv/elixirmix.jpg"/>
+    <itunes:category text="Business">
+      <itunes:category text="Careers"/>
+    </itunes:category>
+    <itunes:category text="Technology"/>
+
+
+
+    <item>
+      <title>EMx 082: Beam Extreme! with Miriam Pena</title>
+      <link>https://devchat.tv/elixir-mix/emx-082-beam-extreme-with-miriam-pena</link>
+      <pubDate>Tue, 17 Dec 2019 06:00:00 -0500</pubDate>
+      <description>&lt;p dir="ltr"&gt;&lt;strong&gt;In this episode of Elixir Mix the panel interviews Miriam Pena, founder of the Erlang Ecosystem Foundation. Miriam shares a little about her background and how she got into Erlang and Elixir. Miriam gave a talk at Elixir Conf about the OTP 22 release and she shares some of the exciting new features in this release.&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p dir="ltr"&gt;&lt;strong&gt;Persistent terms are the first feature Miriam shares with the panel. After explaining what it is Miriam shares examples of the best use cases for this tool. The panel discusses the benefits of this module and how it is faster than ets tables. Next, the discuss the benefits and use cases of counters.&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p dir="ltr"&gt;&lt;strong&gt;The panel shares what they got out of her Elixir Conf talk. It helped them relieve that the Erlang ecosystem is still alive and contributing. The encourage Elixir users to keep an eye out on OTP releases and stay on top of the tools and features that the Erlang team works so hard to provide for them.&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p dir="ltr"&gt;&lt;strong&gt;Miriam shares a little about the Erlang Ecosystem Foundation, its goals and how they got started. She explains how listeners can get involved and what their contributions would be doing.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 dir="ltr"&gt;&lt;strong&gt;Panelists&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;Mark Ericksen&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;Eric Oestrich&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;Josh Adams&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 dir="ltr"&gt;&lt;strong&gt;Guest&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;Miriam Pena&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 dir="ltr"&gt;&lt;strong&gt;Sponsors&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="http://sentry.io/"&gt;Sentry&lt;/a&gt;&amp;ndash; use the code &amp;ldquo;devchat&amp;rdquo; for two months free on Sentry&amp;rsquo;s small plan&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://www.cachefly.com/"&gt;CacheFly&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 dir="ltr"&gt;&lt;strong&gt;Links&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://www.youtube.com/watch?v=-1j36z8SllI"&gt;ElixirConf 2019 -- Beam Extreme: Don&amp;#39;t Do This At Home - Miriam Pena&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="http://erlang.org/doc/man/persistent_term.html"&gt;http://erlang.org/doc/man/persistent_term.html&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="http://erlang.org/doc/man/counters.html"&gt;http://erlang.org/doc/man/counters.html&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="http://erlang.org/doc/man/atomics.html"&gt;http://erlang.org/doc/man/atomics.html&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://erlef.org/"&gt;https://erlef.org/&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://members.erlef.org/join-us"&gt;https://members.erlef.org/join-us&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://erlef.org/stipends/"&gt;https://erlef.org/stipends/&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://erlef.org/news/eef/newsletter-4"&gt;https://erlef.org/news/eef/newsletter-4&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://twitter.com/miriampena?lang=en"&gt;https://twitter.com/miriampena&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://www.facebook.com/Elixir-Mix"&gt;https://www.facebook.com/Elixir-Mix&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://twitter.com/elixir_mix"&gt;https://twitter.com/elixir_mix&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 dir="ltr"&gt;&lt;strong&gt;Picks&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p dir="ltr"&gt;&lt;strong&gt;Mark Ericksen:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://www.amazon.com/William-Shakespeares-Star-Trilogy-34-inch/dp/1594747911"&gt;William Shakespeare&amp;#39;s Star Wars Trilogy&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://youtu.be/YZg15o1jLIM"&gt;Utah Elixir Meetup: 2019-11 Code Poll on Elixir in Docker&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p dir="ltr"&gt;&lt;strong&gt;Eric Oestrich:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://www.lonestarelixir.com/"&gt;https://www.lonestarelixir.com/&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://codesync.global/conferences/code-beam-sf/"&gt;https://codesync.global/conferences/code-beam-sf/&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p dir="ltr"&gt;&lt;strong&gt;Miriam Pena:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="http://blog.erlang.org/persistent_term/"&gt;http://blog.erlang.org/persistent_term/&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://codesync.global/conferences/code-beam-sf/?gclid=Cj0KCQiA89zvBRDoARIsAOIePbDx067Fn_RV7x99zA4JQ5tSoubuvOgMcP5UavCgVqLwPETyhq6NEMgaAnSpEALw_wcB"&gt;Code Beam SF&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p dir="ltr"&gt;&lt;strong&gt;Josh Adams:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;Guitars&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      <source url="https://devchat.tv/elixir-mix">Elixir Mix</source>
+      <guid isPermaLink="false">0134c6dd-3ace-44e4-a709-7ccb2fa86999</guid>
+      <itunes:author></itunes:author>
+      <itunes:subtitle></itunes:subtitle>
+      <itunes:summary>&lt;p dir="ltr"&gt;&lt;strong&gt;In this episode of Elixir Mix the panel interviews Miriam Pena, founder of the Erlang Ecosystem Foundation. Miriam shares a little about her background and how she got into Erlang and Elixir. Miriam gave a talk at Elixir Conf about the OTP 22 release and she shares some of the exciting new features in this release.&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p dir="ltr"&gt;&lt;strong&gt;Persistent terms are the first feature Miriam shares with the panel. After explaining what it is Miriam shares examples of the best use cases for this tool. The panel discusses the benefits of this module and how it is faster than ets tables. Next, the discuss the benefits and use cases of counters.&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p dir="ltr"&gt;&lt;strong&gt;The panel shares what they got out of her Elixir Conf talk. It helped them relieve that the Erlang ecosystem is still alive and contributing. The encourage Elixir users to keep an eye out on OTP releases and stay on top of the tools and features that the Erlang team works so hard to provide for them.&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p dir="ltr"&gt;&lt;strong&gt;Miriam shares a little about the Erlang Ecosystem Foundation, its goals and how they got started. She explains how listeners can get involved and what their contributions would be doing.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 dir="ltr"&gt;&lt;strong&gt;Panelists&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;Mark Ericksen&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;Eric Oestrich&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;Josh Adams&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 dir="ltr"&gt;&lt;strong&gt;Guest&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;Miriam Pena&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 dir="ltr"&gt;&lt;strong&gt;Sponsors&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="http://sentry.io/"&gt;Sentry&lt;/a&gt;&amp;ndash; use the code &amp;ldquo;devchat&amp;rdquo; for two months free on Sentry&amp;rsquo;s small plan&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://www.cachefly.com/"&gt;CacheFly&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 dir="ltr"&gt;&lt;strong&gt;Links&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://www.youtube.com/watch?v=-1j36z8SllI"&gt;ElixirConf 2019 -- Beam Extreme: Don&amp;#39;t Do This At Home - Miriam Pena&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="http://erlang.org/doc/man/persistent_term.html"&gt;http://erlang.org/doc/man/persistent_term.html&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="http://erlang.org/doc/man/counters.html"&gt;http://erlang.org/doc/man/counters.html&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="http://erlang.org/doc/man/atomics.html"&gt;http://erlang.org/doc/man/atomics.html&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://erlef.org/"&gt;https://erlef.org/&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://members.erlef.org/join-us"&gt;https://members.erlef.org/join-us&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://erlef.org/stipends/"&gt;https://erlef.org/stipends/&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://erlef.org/news/eef/newsletter-4"&gt;https://erlef.org/news/eef/newsletter-4&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://twitter.com/miriampena?lang=en"&gt;https://twitter.com/miriampena&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://www.facebook.com/Elixir-Mix"&gt;https://www.facebook.com/Elixir-Mix&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://twitter.com/elixir_mix"&gt;https://twitter.com/elixir_mix&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 dir="ltr"&gt;&lt;strong&gt;Picks&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p dir="ltr"&gt;&lt;strong&gt;Mark Ericksen:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://www.amazon.com/William-Shakespeares-Star-Trilogy-34-inch/dp/1594747911"&gt;William Shakespeare&amp;#39;s Star Wars Trilogy&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://youtu.be/YZg15o1jLIM"&gt;Utah Elixir Meetup: 2019-11 Code Poll on Elixir in Docker&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p dir="ltr"&gt;&lt;strong&gt;Eric Oestrich:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://www.lonestarelixir.com/"&gt;https://www.lonestarelixir.com/&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://codesync.global/conferences/code-beam-sf/"&gt;https://codesync.global/conferences/code-beam-sf/&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p dir="ltr"&gt;&lt;strong&gt;Miriam Pena:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="http://blog.erlang.org/persistent_term/"&gt;http://blog.erlang.org/persistent_term/&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://codesync.global/conferences/code-beam-sf/?gclid=Cj0KCQiA89zvBRDoARIsAOIePbDx067Fn_RV7x99zA4JQ5tSoubuvOgMcP5UavCgVqLwPETyhq6NEMgaAnSpEALw_wcB"&gt;Code Beam SF&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p dir="ltr"&gt;&lt;strong&gt;Josh Adams:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;Guitars&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+</itunes:summary>
+      <itunes:duration>36:07</itunes:duration>
+      <enclosure url="https://media.devchat.tv/elixir-mix/EMx_082_Miriam_Pena.mp3" length="40377646" type="audio/mpeg"/>
+    </item>
+
+
+
+    <item>
+      <title>EMx 081: Discussing Deployment</title>
+      <link>https://devchat.tv/elixir-mix/emx-081-discussing-deployment</link>
+      <pubDate>Tue, 10 Dec 2019 06:00:00 -0500</pubDate>
+      <description>&lt;p dir="ltr"&gt;&lt;strong&gt;In this episode of Elixir Mix the panel has a conversation about a few things they have been thinking about. First, they shout out to anyone who would love to chat about config change callbacks. Then they dive into deployment discussing the updates that have happened this year. They share their experiences with the changes and compare the Elixir release to Distillery.&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p dir="ltr"&gt;&lt;strong&gt;There are many options for deployment and they discuss some of the ones they have used. They consider services and do it yourself options. The panel shares lessons learned through their deployment experiences and give pro-tips for beginners and those new to Elixir.&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p dir="ltr"&gt;&lt;strong&gt;The next topic they discuss is hot code reload. Michael shares his fascination with this practice and explains what it is. The panel discusses the possibilities and use-cases for hot code reload. Hot code upgrade is also discussed.&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 dir="ltr"&gt;&lt;strong&gt;Panelists&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;Mark Ericksen&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;Michael Ries&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;Eric Oestrich&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 dir="ltr"&gt;&lt;strong&gt;Sponsors&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="http://sentry.io/"&gt;Sentry&lt;/a&gt;&amp;ndash; use the code &amp;ldquo;devchat&amp;rdquo; for two months free on Sentry&amp;rsquo;s small plan&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://www.cachefly.com/"&gt;CacheFly&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 dir="ltr"&gt;&lt;strong&gt;Links&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://github.com/oestrich/grapevine/blob/master/Dockerfile.releaser"&gt;grapevine&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://hexdocs.pm/distillery/guides/working_with_docker.html"&gt;Deploying with Docker&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://hexdocs.pm/phoenix/heroku.html"&gt;https://hexdocs.pm/phoenix/heroku.html&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://www.heroku.com/"&gt;https://www.heroku.com/&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://cloud.google.com/kubernetes-engine/"&gt;https://cloud.google.com/kubernetes-engine/&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://www.ansible.com/"&gt;https://www.ansible.com/&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://gigalixir.com/"&gt;https://gigalixir.com/&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://gist.github.com/oestrich/52ac2afa26f48e927d0078d885afc01b"&gt;deploy.sh&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://hexdocs.pm/distillery/guides/running_migrations.html"&gt;Running migrations&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://github.com/oestrich/grapevine/blob/master/lib/grapevine/release_tasks.ex"&gt;release_tasks.ex&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://elixir-lang.org/getting-started/mix-otp/config-and-releases.html#releases"&gt;Configuration and releases&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://hexdocs.pm/mix/Mix.Tasks.Release.html"&gt;mix release&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://github.com/zhongwencool/observer_cli"&gt;observer_cli&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://www.youtube.com/watch?v=xrIjfIjssLE"&gt;Erlang: The Movie&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://embedded-elixir.com/post/2018-12-10-using-distribution-to-test-hardware/"&gt;Using Erlang Distribution to test hardware&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://spectrum.ieee.org/telecom/security/the-athens-affair"&gt;The Athens Affair&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://www.youtube.com/watch?v=nLApFANtkHs"&gt;ElixirConf 2018 - Docker and OTP Friends or Foes - Daniel Azuma&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://codesync.global/media/the-art-live-upgrade-richard-carlsson/"&gt;Richard Carlsson - The art of the live upgrade - 10 yrs of evolving a live system | Code BEAM SF 19&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://www.facebook.com/Elixir-Mix"&gt;https://www.facebook.com/Elixir-Mix&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://twitter.com/elixir_mix"&gt;https://twitter.com/elixir_mix&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 dir="ltr"&gt;&lt;strong&gt;Picks&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p dir="ltr"&gt;&lt;strong&gt;Mark Ericksen:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://www.imdb.com/title/tt0787475/"&gt;Hot Rod &lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://thinkingelixir.com/install-elixir-using-asdf/"&gt;Install Elixir using asdf&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p dir="ltr"&gt;&lt;strong&gt;Michael Ries:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://twitter.com/fhunleth/status/1195524113617637376"&gt;https://twitter.com/fhunleth/status/1195524113617637376&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://github.com/boydm/scenic_sensor"&gt;scenic sensor&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p dir="ltr"&gt;&lt;strong&gt;Eric Oestrich:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://podcast.smartlogic.io/?season=1"&gt;Elixir Wizards&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      <source url="https://devchat.tv/elixir-mix">Elixir Mix</source>
+      <guid isPermaLink="false">af3f1209-56cc-47d9-8713-eb9b39e727e3</guid>
+      <itunes:author></itunes:author>
+      <itunes:subtitle></itunes:subtitle>
+      <itunes:summary>&lt;p dir="ltr"&gt;&lt;strong&gt;In this episode of Elixir Mix the panel has a conversation about a few things they have been thinking about. First, they shout out to anyone who would love to chat about config change callbacks. Then they dive into deployment discussing the updates that have happened this year. They share their experiences with the changes and compare the Elixir release to Distillery.&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p dir="ltr"&gt;&lt;strong&gt;There are many options for deployment and they discuss some of the ones they have used. They consider services and do it yourself options. The panel shares lessons learned through their deployment experiences and give pro-tips for beginners and those new to Elixir.&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p dir="ltr"&gt;&lt;strong&gt;The next topic they discuss is hot code reload. Michael shares his fascination with this practice and explains what it is. The panel discusses the possibilities and use-cases for hot code reload. Hot code upgrade is also discussed.&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 dir="ltr"&gt;&lt;strong&gt;Panelists&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;Mark Ericksen&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;Michael Ries&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;Eric Oestrich&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 dir="ltr"&gt;&lt;strong&gt;Sponsors&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="http://sentry.io/"&gt;Sentry&lt;/a&gt;&amp;ndash; use the code &amp;ldquo;devchat&amp;rdquo; for two months free on Sentry&amp;rsquo;s small plan&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://www.cachefly.com/"&gt;CacheFly&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 dir="ltr"&gt;&lt;strong&gt;Links&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://github.com/oestrich/grapevine/blob/master/Dockerfile.releaser"&gt;grapevine&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://hexdocs.pm/distillery/guides/working_with_docker.html"&gt;Deploying with Docker&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://hexdocs.pm/phoenix/heroku.html"&gt;https://hexdocs.pm/phoenix/heroku.html&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://www.heroku.com/"&gt;https://www.heroku.com/&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://cloud.google.com/kubernetes-engine/"&gt;https://cloud.google.com/kubernetes-engine/&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://www.ansible.com/"&gt;https://www.ansible.com/&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://gigalixir.com/"&gt;https://gigalixir.com/&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://gist.github.com/oestrich/52ac2afa26f48e927d0078d885afc01b"&gt;deploy.sh&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://hexdocs.pm/distillery/guides/running_migrations.html"&gt;Running migrations&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://github.com/oestrich/grapevine/blob/master/lib/grapevine/release_tasks.ex"&gt;release_tasks.ex&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://elixir-lang.org/getting-started/mix-otp/config-and-releases.html#releases"&gt;Configuration and releases&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://hexdocs.pm/mix/Mix.Tasks.Release.html"&gt;mix release&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://github.com/zhongwencool/observer_cli"&gt;observer_cli&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://www.youtube.com/watch?v=xrIjfIjssLE"&gt;Erlang: The Movie&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://embedded-elixir.com/post/2018-12-10-using-distribution-to-test-hardware/"&gt;Using Erlang Distribution to test hardware&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://spectrum.ieee.org/telecom/security/the-athens-affair"&gt;The Athens Affair&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://www.youtube.com/watch?v=nLApFANtkHs"&gt;ElixirConf 2018 - Docker and OTP Friends or Foes - Daniel Azuma&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://codesync.global/media/the-art-live-upgrade-richard-carlsson/"&gt;Richard Carlsson - The art of the live upgrade - 10 yrs of evolving a live system | Code BEAM SF 19&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://www.facebook.com/Elixir-Mix"&gt;https://www.facebook.com/Elixir-Mix&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://twitter.com/elixir_mix"&gt;https://twitter.com/elixir_mix&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 dir="ltr"&gt;&lt;strong&gt;Picks&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p dir="ltr"&gt;&lt;strong&gt;Mark Ericksen:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://www.imdb.com/title/tt0787475/"&gt;Hot Rod &lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://thinkingelixir.com/install-elixir-using-asdf/"&gt;Install Elixir using asdf&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p dir="ltr"&gt;&lt;strong&gt;Michael Ries:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://twitter.com/fhunleth/status/1195524113617637376"&gt;https://twitter.com/fhunleth/status/1195524113617637376&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://github.com/boydm/scenic_sensor"&gt;scenic sensor&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p dir="ltr"&gt;&lt;strong&gt;Eric Oestrich:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://podcast.smartlogic.io/?season=1"&gt;Elixir Wizards&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+</itunes:summary>
+      <itunes:duration>51:28</itunes:duration>
+      <enclosure url="https://media.devchat.tv/elixir-mix/EMx_081_Panel.mp3" length="55030269" type="audio/mpeg"/>
+    </item>
+
+
+
+    <item>
+      <title>EMx 080: The Big Elixir Favorites</title>
+      <link>https://devchat.tv/elixir-mix/emx-080-the-big-elixir-favorites</link>
+      <pubDate>Tue, 03 Dec 2019 06:00:00 -0500</pubDate>
+      <description>&lt;p dir="ltr"&gt;&lt;strong&gt;In this episode of Elixir Mix the panel syncs up by discussing The Big Elixir Conference, their favorite talks and what they are working on. The first talk they discuss is Scott Southworth&amp;rsquo;s talk about medical messaging and the impressive work he does with the HL7 parser.&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p dir="ltr"&gt;&lt;strong&gt;Next, they discuss Ben Church&amp;rsquo;s talk about business logic where he talks about leex and yecc. The panel discusses leex, yeccs and their own work with parsers. Cory O&amp;rsquo;Daniel&amp;rsquo;s talk on Kubereneters the panel found particularly funny and interesting. Elixir Mix&amp;rsquo;s very own Eric Oestrich was the keynote speaker at the talk, he summarizes his talk for the panel.The Live View talk given by Sophie DeBenedetto is discussed as well and the panel shares their biggest take away from the talk.&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p dir="ltr"&gt;&lt;strong&gt;The panel discusses a little of what they have been working on. They ask Eric about his Ponchbrella project. He explains what it is and how it works. Using this hybrid of poncho and umbrella projects for grapevine made more sense to him. He invites everyone to take a look as grapevine is open source. The episode ends as the panel praises Elixir&amp;rsquo;s flexibility and other great qualities.&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 dir="ltr"&gt;&lt;strong&gt;Panelists&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;Mark Ericksen&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;Josh Adams&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;Eric Oestrich&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 dir="ltr"&gt;&lt;strong&gt;Sponsors&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="http://sentry.io/"&gt;Sentry&lt;/a&gt;&amp;ndash; use the code &amp;ldquo;devchat&amp;rdquo; for two months free on Sentry&amp;rsquo;s small plan&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;ElixirCasts |&lt;a href="https://elixircasts.io/"&gt; Get 10% off with the promo code &amp;quot;elixirmix&amp;quot;&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://www.cachefly.com/"&gt;CacheFly&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 dir="ltr"&gt;&lt;strong&gt;Links&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://www.thebigelixir.com/"&gt;https://www.thebigelixir.com/&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://hexdocs.pm/elixir_hl7/HL7.Query.html"&gt;https://hexdocs.pm/elixir_hl7/HL7.Query.html&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://github.com/HCA-Healthcare/elixir-hl7"&gt;https://github.com/HCA-Healthcare/elixir-hl7&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="http://erlang.org/doc/man/leex.html"&gt;http://erlang.org/doc/man/leex.html&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="http://erlang.org/doc/man/yecc.html"&gt;http://erlang.org/doc/man/yecc.html&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://github.com/ympons/expreso"&gt;https://github.com/ympons/expreso&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://stackoverflow.com/questions/1732348/regex-match-open-tags-except-xhtml-self-contained-tags"&gt;RegEx match open tags except XHTML self-contained tags&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://github.com/elm/parser"&gt;https://github.com/elm/parser&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://www.youtube.com/watch?v=kFIsoq63lwo"&gt;Wilford Brimley On His Diabetes - Original Video&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://www.youtube.com/watch?v=2hNu1I9r_1A"&gt;Wilford Brimley Diabeetus Remix&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://twitter.com/knewter/status/1192831261624164352"&gt;https://twitter.com/knewter/status/1192831261624164352&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://github.com/oestrich/grapevine/tree/master/apps"&gt;https://github.com/oestrich/grapevine/tree/master/apps&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://www.facebook.com/Elixir-Mix"&gt;https://www.facebook.com/Elixir-Mix&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://twitter.com/elixir_mix"&gt;https://twitter.com/elixir_mix&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 dir="ltr"&gt;&lt;strong&gt;Picks&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p dir="ltr"&gt;&lt;strong&gt;Mark Ericksen:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://github.com/elixir-lang/elixir/releases/tag/v1.9.3"&gt;https://github.com/elixir-lang/elixir/releases/tag/v1.9.3&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p dir="ltr"&gt;&lt;strong&gt;Josh Adams:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://jenkins-x.io/"&gt;https://jenkins-x.io/&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Eric Oestrich:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;&lt;a href="https://podcast.smartlogic.io/"&gt;https://podcast.smartlogic.io/&lt;/a&gt; &lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+      <source url="https://devchat.tv/elixir-mix">Elixir Mix</source>
+      <guid isPermaLink="false">93f5a69e-c2db-49de-b96d-cb87708e9ae8</guid>
+      <itunes:author></itunes:author>
+      <itunes:subtitle></itunes:subtitle>
+      <itunes:summary>&lt;p dir="ltr"&gt;&lt;strong&gt;In this episode of Elixir Mix the panel syncs up by discussing The Big Elixir Conference, their favorite talks and what they are working on. The first talk they discuss is Scott Southworth&amp;rsquo;s talk about medical messaging and the impressive work he does with the HL7 parser.&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p dir="ltr"&gt;&lt;strong&gt;Next, they discuss Ben Church&amp;rsquo;s talk about business logic where he talks about leex and yecc. The panel discusses leex, yeccs and their own work with parsers. Cory O&amp;rsquo;Daniel&amp;rsquo;s talk on Kubereneters the panel found particularly funny and interesting. Elixir Mix&amp;rsquo;s very own Eric Oestrich was the keynote speaker at the talk, he summarizes his talk for the panel.The Live View talk given by Sophie DeBenedetto is discussed as well and the panel shares their biggest take away from the talk.&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p dir="ltr"&gt;&lt;strong&gt;The panel discusses a little of what they have been working on. They ask Eric about his Ponchbrella project. He explains what it is and how it works. Using this hybrid of poncho and umbrella projects for grapevine made more sense to him. He invites everyone to take a look as grapevine is open source. The episode ends as the panel praises Elixir&amp;rsquo;s flexibility and other great qualities.&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 dir="ltr"&gt;&lt;strong&gt;Panelists&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;Mark Ericksen&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;Josh Adams&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;Eric Oestrich&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 dir="ltr"&gt;&lt;strong&gt;Sponsors&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="http://sentry.io/"&gt;Sentry&lt;/a&gt;&amp;ndash; use the code &amp;ldquo;devchat&amp;rdquo; for two months free on Sentry&amp;rsquo;s small plan&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;ElixirCasts |&lt;a href="https://elixircasts.io/"&gt; Get 10% off with the promo code &amp;quot;elixirmix&amp;quot;&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://www.cachefly.com/"&gt;CacheFly&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 dir="ltr"&gt;&lt;strong&gt;Links&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://www.thebigelixir.com/"&gt;https://www.thebigelixir.com/&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://hexdocs.pm/elixir_hl7/HL7.Query.html"&gt;https://hexdocs.pm/elixir_hl7/HL7.Query.html&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://github.com/HCA-Healthcare/elixir-hl7"&gt;https://github.com/HCA-Healthcare/elixir-hl7&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="http://erlang.org/doc/man/leex.html"&gt;http://erlang.org/doc/man/leex.html&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="http://erlang.org/doc/man/yecc.html"&gt;http://erlang.org/doc/man/yecc.html&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://github.com/ympons/expreso"&gt;https://github.com/ympons/expreso&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://stackoverflow.com/questions/1732348/regex-match-open-tags-except-xhtml-self-contained-tags"&gt;RegEx match open tags except XHTML self-contained tags&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://github.com/elm/parser"&gt;https://github.com/elm/parser&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://www.youtube.com/watch?v=kFIsoq63lwo"&gt;Wilford Brimley On His Diabetes - Original Video&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://www.youtube.com/watch?v=2hNu1I9r_1A"&gt;Wilford Brimley Diabeetus Remix&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://twitter.com/knewter/status/1192831261624164352"&gt;https://twitter.com/knewter/status/1192831261624164352&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://github.com/oestrich/grapevine/tree/master/apps"&gt;https://github.com/oestrich/grapevine/tree/master/apps&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://www.facebook.com/Elixir-Mix"&gt;https://www.facebook.com/Elixir-Mix&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://twitter.com/elixir_mix"&gt;https://twitter.com/elixir_mix&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 dir="ltr"&gt;&lt;strong&gt;Picks&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p dir="ltr"&gt;&lt;strong&gt;Mark Ericksen:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://github.com/elixir-lang/elixir/releases/tag/v1.9.3"&gt;https://github.com/elixir-lang/elixir/releases/tag/v1.9.3&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p dir="ltr"&gt;&lt;strong&gt;Josh Adams:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li dir="ltr"&gt;
+	&lt;p dir="ltr"&gt;&lt;strong&gt;&lt;a href="https://jenkins-x.io/"&gt;https://jenkins-x.io/&lt;/a&gt;&amp;nbsp;&lt;/strong&gt;&lt;/p&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Eric Oestrich:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;&lt;a href="https://podcast.smartlogic.io/"&gt;https://podcast.smartlogic.io/&lt;/a&gt; &lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</itunes:summary>
+      <itunes:duration>31:32</itunes:duration>
+      <enclosure url="https://media.devchat.tv/elixir-mix/EMx_080_Panel.mp3" length="35773174" type="audio/mpeg"/>
+    </item>
+
+  </channel>
+</rss>
+
