@@ -19,22 +19,24 @@
     <category>bible teaching</category>
     <category>exposition</category>
 
-    <itunes:subtitle>A weekly exploration into the people who make Elixir what it is.</itunes:subtitle>
-    <itunes:author>Devchat.tv</itunes:author>
+    <itunes:subtitle>An exposition through the book of Hebrews</itunes:subtitle>
+    <itunes:author>Dennis McCallum</itunes:author>
     <itunes:summary>
-      <![CDATA[Elixir Mix is a weekly show focused on the Elixir programming community. Our panel discusses topics around functional programming, the Elixir ecosystem, and building real world apps with Elixir based tools and frameworks.]]>
+      <![CDATA[Bible teachings through the book of Hebrews delivered in 2015]]>
     </itunes:summary>
     <itunes:explicit>no</itunes:explicit>
-    <itunes:keywords>elixir, erlang, programming, code, software, development, developer, functional</itunes:keywords>
+    <itunes:keywords>bible, christianity, hebrews, exposition</itunes:keywords>
     <itunes:owner>
-      <itunes:name>Charles Max Wood</itunes:name>
-      <itunes:email>chuck@devchat.tv</itunes:email>
+      <itunes:name>Dennis McCallum</itunes:name>
+      <itunes:email>ken@ken.ken</itunes:email>
     </itunes:owner>
-    <itunes:image href="https://s3.amazonaws.com/devchat.tv/elixirmix.jpg"/>
-    <itunes:category text="Business">
-      <itunes:category text="Careers"/>
+    <itunes:image href="https://www.xenos.org/portraits/dennismccallum.gif"/>
+    <itunes:category text="Religion and Spirituality">
+      <itunes:category text="Christianity"/>
     </itunes:category>
-    <itunes:category text="Technology"/>
+    <itunes:category text="Health and Fitness">
+      <itunes:category text="Mental Health"/>
+    </itunes:category>
 
 
 <%= for teaching <- @teachings do %>
