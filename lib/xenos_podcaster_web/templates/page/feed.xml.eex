@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
   <channel>
-    <title>Dennis McCallum Hebrews 2015</title>
+    <title><%= @series.title %></title>
     <description>
-      <![CDATA[Bible teachings delivered in 2015 from the book of Hebrews by Dennis McCallum]]>
+      <![CDATA[Bible <%= @series.title %> by <%= @series.author %>]]>
     </description>
-    <link>https://www.xenos.org/teachings/?series=245</link>
+    <link><%= @series.url %></link>
     <language>en</language>
     <managingEditor>ken@ken.ken</managingEditor>
     <webMaster>ken@ken.ken</webMaster>
-    <copyright>2015 Xenos Christian Fellowship</copyright>
-    <lastBuildDate>Tue, 17 Dec 2019 06:00:40 -0500</lastBuildDate>
+    <copyright>1993 - 2020 Xenos Christian Fellowship</copyright>
+    <lastBuildDate><%= @series.last_build_date %></lastBuildDate>
     <image>
       <link>https://xenos.org/teachings</link>
-      <url>https://www.xenos.org/portraits/dennismccallum.gif</url>
-      <title>Hebrews by Dennis McCallum</title>
+      <url><%= @series.image_url %></url>
+      <title><%= @series.title %> by <%= @series.author %></title>
     </image>
     <category>bible teaching</category>
     <category>exposition</category>
 
-    <itunes:subtitle>An exposition through the book of Hebrews</itunes:subtitle>
-    <itunes:author>Dennis McCallum</itunes:author>
+    <itunes:subtitle><%= @series.subtitle %></itunes:subtitle>
+    <itunes:author><%= @series.author %></itunes:author>
     <itunes:summary>
-      <![CDATA[Bible teachings through the book of Hebrews delivered in 2015]]>
+      <![CDATA[Bible <%= @series.title %> by <%= @series.author %>]]>
     </itunes:summary>
     <itunes:explicit>no</itunes:explicit>
     <itunes:keywords>bible, christianity, hebrews, exposition</itunes:keywords>
     <itunes:owner>
-      <itunes:name>Dennis McCallum</itunes:name>
+      <itunes:name>Xenos Christian Fellowship</itunes:name>
       <itunes:email>ken@ken.ken</itunes:email>
     </itunes:owner>
-    <itunes:image href="https://www.xenos.org/portraits/dennismccallum.gif"/>
+    <itunes:image href="<%= @series.image_url %>"/>
     <itunes:category text="Religion and Spirituality">
       <itunes:category text="Christianity"/>
     </itunes:category>
@@ -39,17 +39,17 @@
     </itunes:category>
 
 
-<%= for teaching <- @teachings do %>
+<%= for teaching <- @series.teachings do %>
     <item>
       <title><%= teaching.teaching_title %></title>
-      <link>https://www.xenos.org/teachings/?teaching=3059</link>
-      <pubDate>Tue, 17 Dec 2019 06:00:00 -0500</pubDate>
+      <link><%= teaching.url %></link>
+      <pubDate><%= teaching.date %></pubDate>
       <description>
         <![CDATA[<%= teaching.verse_range %> <%= teaching.teaching_title %> <%= teaching.author %>]]>
       </description>
       <source url="<%= teaching.media_url %>"><%= teaching.author %></source>
-      <guid isPermaLink="false">NEED A SHA <%= teaching.verse_range %></guid>
-      <itunes:author></itunes:author>
+      <guid isPermaLink="false"><%= teaching.xenos_teaching_id %></guid>
+      <itunes:author><%= teaching.author %></itunes:author>
       <itunes:subtitle></itunes:subtitle>
       <itunes:summary>
         <![CDATA[<%= teaching.verse_range %> <%= teaching.teaching_title %> <%= teaching.author %>]]>

@@ -7,10 +7,10 @@ defmodule XenosPodcasterWeb.PageController do
   end
 
   def feed(conn, _params) do
-    teachings = Teachings.teachings
+    series = Teachings.series
     conn
     |> put_layout(:none)
     |> put_resp_content_type("application/xml")
-    |> render("feed.xml", teachings: teachings)
+    |> render("feed.xml", series: series)
   end
 end
