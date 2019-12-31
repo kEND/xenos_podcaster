@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
   <channel>
-    <title><%= @series.title %></title>
+    <title><%= make_safe(@series.title) %></title>
     <description>
       <![CDATA[Bible <%= @series.title %> by <%= @series.author %>]]>
     </description>
@@ -14,34 +14,34 @@
     <image>
       <link>https://xenos.org/teachings</link>
       <url><%= @series.image_url %></url>
-      <title><%= @series.title %> by <%= @series.author %></title>
+      <title><%= make_safe(@series.title) %> by <%= make_safe(@series.author) %></title>
     </image>
     <category>bible teaching</category>
     <category>exposition</category>
 
-    <itunes:subtitle><%= @series.subtitle %></itunes:subtitle>
-    <itunes:author><%= @series.author %></itunes:author>
+    <itunes:subtitle><%= make_safe(@series.subtitle) %></itunes:subtitle>
+    <itunes:author><%= make_safe(@series.author) %></itunes:author>
     <itunes:summary>
       <![CDATA[Bible <%= @series.title %> by <%= @series.author %>]]>
     </itunes:summary>
     <itunes:explicit>no</itunes:explicit>
-    <itunes:keywords>bible, christianity, hebrews, exposition</itunes:keywords>
+    <itunes:keywords>bible, christianity, exposition</itunes:keywords>
     <itunes:owner>
       <itunes:name>Xenos Christian Fellowship</itunes:name>
       <itunes:email>ken@ken.ken</itunes:email>
     </itunes:owner>
     <itunes:image href="<%= @series.image_url %>"/>
-    <itunes:category text="Religion and Spirituality">
+    <itunes:category text="Religion &amp; Spirituality">
       <itunes:category text="Christianity"/>
     </itunes:category>
-    <itunes:category text="Health and Fitness">
+    <itunes:category text="Health &amp; Fitness">
       <itunes:category text="Mental Health"/>
     </itunes:category>
 
 
 <%= for teaching <- @series.teachings do %>
     <item>
-      <title><%= teaching.teaching_title %></title>
+      <title><%= make_safe(teaching.teaching_title) %></title>
       <link><%= teaching.url %></link>
       <pubDate><%= teaching.date %></pubDate>
       <description>
@@ -49,7 +49,7 @@
       </description>
       <source url="<%= teaching.media_url %>"><%= teaching.author %></source>
       <guid isPermaLink="false"><%= teaching.xenos_teaching_id %></guid>
-      <itunes:author><%= teaching.author %></itunes:author>
+      <itunes:author><%= make_safe(teaching.author) %></itunes:author>
       <itunes:subtitle></itunes:subtitle>
       <itunes:summary>
         <![CDATA[<%= teaching.verse_range %> <%= teaching.teaching_title %> <%= teaching.author %>]]>
