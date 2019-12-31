@@ -9,7 +9,7 @@ defmodule XenosPodcaster.Scraper do
   @doc """
   Get the teaching series page by URL
   """
-  def get_teaching_series(teaching_page_url \\ "https://www.xenos.org/teachings/?series=245") do
+  def get_teaching_series(teaching_page_url) do
     case HTTPoison.get(teaching_page_url, [], [follow_redirect: true, max_redirect: 5]) do
       {:ok, %HTTPoison.Response{status_code: 200, body: body}} ->
         {:ok, populate_series_data(%{body: body, url: teaching_page_url})}
@@ -35,6 +35,7 @@ defmodule XenosPodcaster.Scraper do
   end
 
   ####  to be refactored to Teachings module
+  # TODO HTML encode text so the feed works see series 346 Husbands & Wives
   def series_title(body) do
     body
     |> Floki.find("h1#book-title")
@@ -98,7 +99,7 @@ defmodule XenosPodcaster.Scraper do
     {date, teaching_id} = date_and_id(title)
 
     %{author: teaching_author(body),
-      medial_url: media_url(body),
+      media_url: media_url(body),
       teaching_title: teaching_title(body),
       xenos_teaching_id: teaching_id,
       date: date,
