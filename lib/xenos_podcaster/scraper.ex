@@ -13,7 +13,7 @@ defmodule XenosPodcaster.Scraper do
   def get_teaching_series(teaching_page_url) do
     case HTTPoison.get(teaching_page_url, [], [follow_redirect: true, max_redirect: 5]) do
       {:ok, %HTTPoison.Response{status_code: 200, body: body}} ->
-        {:ok, Teachings.populate_series_data(%{body: body, url: teaching_page_url})}
+        {:ok, %{body: body}}
       {:ok, %HTTPoison.Response{status_code: 404}} ->
         IO.puts "Not found :("
       {:error, %HTTPoison.Error{reason: reason}} ->

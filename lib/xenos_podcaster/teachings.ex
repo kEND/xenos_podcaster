@@ -5,8 +5,14 @@ defmodule XenosPodcaster.Teachings do
   Return a series map with a list of teachings for consumption by the feed
   """
   def series(url \\ "https://www.xenos.org/teachings/?series=245") do
-    {:ok, series} = Scraper.get_teaching_series(url)
-    series
+    case Scraper.get_teaching_series(url) do
+      {:ok, %{body: body}} ->
+        populate_series_data(%{body: body, url: url})
+      {:ok, %{status_code: 404}} ->
+        IO.puts "Not found :("
+      {:error, %{reason: reason}} ->
+        IO.inspect reason
+    end
   end
 
   def series_title(body) do
