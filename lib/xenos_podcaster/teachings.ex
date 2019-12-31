@@ -70,9 +70,22 @@ defmodule XenosPodcaster.Teachings do
       image_url: author_image_url(body),
       subtitle: series_subtitle(body),
       last_build_date: series_date(body),
-      teachings: Enum.map(teaching_page_urls(body), &Scraper.get_teaching_page(&1))
+      teachings: Enum.map(teaching_page_urls(body), &teaching_page(&1))
     }
   end
+
+  def teaching_page({url, title}) do
+    case Scraper.get_teaching_page(url) do
+      {:ok, %{body: body}} ->
+        populate_teaching_data(%{body: body, url: url, title: title})
+      {:ok, %{status_code: 404}} ->
+        IO.puts "Not found :("
+      {:error, %{reason: reason}} ->
+        IO.inspect reason
+    end
+  end
+
+  # Teachings.
 
   def populate_teaching_data(%{body: body, url: url, title: title}) do
     {date, teaching_id} = date_and_id(title)

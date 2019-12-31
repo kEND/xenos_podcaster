@@ -24,10 +24,10 @@ defmodule XenosPodcaster.Scraper do
   @doc """
   Get the teaching pages by URL
   """
-  def get_teaching_page({url, title}) do
+  def get_teaching_page(url) do
     case HTTPoison.get(url, [], [follow_redirect: true, max_redirect: 5]) do
       {:ok, %HTTPoison.Response{status_code: 200, body: body}} ->
-        Teachings.populate_teaching_data(%{body: body, url: url, title: title})
+        {:ok, %{body: body}}
       {:ok, %HTTPoison.Response{status_code: 404}} ->
         IO.puts "Not found :("
       {:error, %HTTPoison.Error{reason: reason}} ->
