@@ -18,6 +18,7 @@ defmodule XenosPodcasterWeb.Router do
 
     get "/", PageController, :index
     get "/feed", PageController, :feed
+    post "/set_series", PageController, :set_series
   end
 
   # Other scopes may use custom stacks.
