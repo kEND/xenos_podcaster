@@ -3,15 +3,13 @@ defmodule XenosPodcasterWeb.PageController do
   alias XenosPodcaster.Teachings
 
   def index(conn, _params) do
-    if series_url = get_session(conn, :series_url) do
-      conn = put_session(conn, :series_url, "https://www.xenos.org/teachings/?series=346")
-    end
+    series_url = get_session(conn, :series_url)
 
     render(conn, "index.html", series_url: series_url)
   end
 
   def feed(conn, _params) do
-    series_url = get_session(conn, :series_url)
+    series_url = get_session(conn, :series_url) || "https://xenos.org/teachings/?series=245"
 
     series = Teachings.series(series_url)
     conn
@@ -23,6 +21,6 @@ defmodule XenosPodcasterWeb.PageController do
   def set_series(conn, %{"series_url" => series_url}) do
     conn
     |> put_session(:series_url, series_url)
-    |> redirect(to: Routes.page_path(conn, :feed))
+    |> redirect(to: Routes.page_path(conn, :index))
   end
 end

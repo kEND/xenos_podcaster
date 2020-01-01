@@ -3,11 +3,13 @@
   <p>Consuming old html links to teachings<br/>and broadcasting them as a podcast feed</p>
   <%= form_for @conn, Routes.page_path(@conn, :set_series), [], fn f -> %>
     <div>
-      <%= text_input f, :series_url, placeholder: "Xenos teaching series URL" %> 
+      <%= text_input f, :series_url, 
+        placeholder: "https://www.xenos.org/teachings/?series=346",
+        value: @series_url %> 
     </div>
-    <%= submit "Get feed!" %> 
+    <%= submit "Set feed!" %> 
   <% end %>
-  <p><%= @series_url %></p>
+  <p><a href="/feed"><%= @series_url %></a></p>
 </section>
 
 <section class="row">
