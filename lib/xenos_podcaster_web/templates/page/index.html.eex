@@ -1,6 +1,9 @@
 <section class="phx-hero">
   <h1><%= gettext "Welcome to %{name}!", name: "Podcaster" %></h1>
   <p>Consuming old html links to teachings<br/>and broadcasting them as a podcast feed</p>
+  <p>Simply navigate to /feed/245 where series number can be found at<br/>
+      https://xenos.org/teachings/?series=245</p>
+  <p><strong>245</strong> is the series number.</p>
 </section>
 
 <section class="row">
