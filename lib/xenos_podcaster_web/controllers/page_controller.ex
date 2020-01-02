@@ -7,7 +7,7 @@ defmodule XenosPodcasterWeb.PageController do
   end
 
   def feed(conn, %{"series" => series}) do
-    series = Teachings.series("https://xenos.org/teachings/?series=" <> series)
+    series = Teachings.series(series)
     conn
     |> put_layout(:none)
     |> put_resp_content_type("application/xml")

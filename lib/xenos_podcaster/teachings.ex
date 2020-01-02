@@ -4,10 +4,10 @@ defmodule XenosPodcaster.Teachings do
   @doc """
   Return a series map with a list of teachings for consumption by the feed
   """
-  def series(url \\ "https://www.xenos.org/teachings/?series=346") do
-    case Scraper.get_teaching_series(url) do
+  def series(series_no \\ "346") do
+    case Scraper.get_teaching_series(series_no) do
       {:ok, %{body: body}} ->
-        populate_series_data(%{body: body, url: url})
+        populate_series_data(%{body: body, series_no: series_no })
       {:ok, %{status_code: 404}} ->
         IO.puts "Not found :("
       {:error, %{reason: reason}} ->
@@ -64,10 +64,10 @@ defmodule XenosPodcaster.Teachings do
     |> Enum.map(fn({_name, [{"href", href}, {"title", title}], _}) -> {"https://xenos.org" <> href, title} end)
   end
 
-  def populate_series_data(%{body: body, url: url}) do
+  def populate_series_data(%{body: body, series_no: series_no}) do
     %{title: series_title(body), 
       author: series_author(body),
-      url: url, 
+      url: "https://xenos.org/teachings/?series=" <> series_no, 
       image_url: author_image_url(body),
       subtitle: series_subtitle(body),
       last_build_date: series_date(body),
