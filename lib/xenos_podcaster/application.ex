@@ -9,9 +9,10 @@ defmodule XenosPodcaster.Application do
     # List all child processes to be supervised
     children = [
       # Start the endpoint when the application starts
-      XenosPodcasterWeb.Endpoint
+      XenosPodcasterWeb.Endpoint,
       # Starts a worker by calling: XenosPodcaster.Worker.start_link(arg)
       # {XenosPodcaster.Worker, arg},
+      XenosPodcaster.CacheSupervisor
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
