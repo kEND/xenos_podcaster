@@ -50,6 +50,7 @@ defmodule XenosPodcaster.Teachings do
     |> extract_date()
   end
 
+  def extract_date(nil), do: ""
   def extract_date(datestring) do
     datestring = Regex.run(~r/.*(\d{4}-\d{2}-\d{2}).*/, datestring)
                   |> List.last()
