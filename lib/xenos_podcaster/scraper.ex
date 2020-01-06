@@ -1,5 +1,4 @@
 defmodule XenosPodcaster.Scraper do
-  alias XenosPodcaster.Teachings
   @moduledoc """
   Documentation for the Xenos Teachings Podcast Scraper.
 

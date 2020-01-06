@@ -1,0 +1,3 @@
+# Declare files that will always have CRLF line endings on checkout.
+test/support/245.html binary
+test/support/346.html binary

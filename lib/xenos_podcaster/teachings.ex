@@ -23,8 +23,13 @@ defmodule XenosPodcaster.Teachings do
 
   def series_author(body) do
     body
-    |> Floki.find("#author-name-caption a")
+    |> Floki.find("#author-name-caption")
     |> Floki.text()
+    |> extract_author_name()
+  end
+
+  def extract_author_name(string) do
+    List.last(Regex.run(~r/by (.*)/, string))
   end
 
   def author_image_url(body) do
