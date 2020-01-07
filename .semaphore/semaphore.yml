@@ -1,0 +1,23 @@
+version: v1.0
+name: Xenos Podcaster
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu1804
+blocks:
+  - name: Test
+    task:
+      env_vars:
+        - name: MIX_ENV
+          value: test
+      jobs:
+        - name: mix test
+          commands:
+            - checkout
+            - sem-version elixir 1.9.1
+            - cache restore
+            - mix deps.get
+            - cache store
+            - mix local.rebar --force
+            - mix compile
+            - mix test
