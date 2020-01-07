@@ -18,5 +18,6 @@ blocks:
             - cache restore
             - mix deps.get
             - cache store
+            - mix local.rebar --force
             - mix compile
             - mix test
