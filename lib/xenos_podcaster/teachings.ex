@@ -29,7 +29,7 @@ defmodule XenosPodcaster.Teachings do
   end
 
   def extract_author_name(string) do
-    List.last(Regex.run(~r/by (.*)/, string))
+    List.last(Regex.run(~r/by (.*)/, string) || ["Various Teachers"])
   end
 
   def author_image_url(body) do

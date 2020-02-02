@@ -22,4 +22,9 @@ defmodule XenosPodcaster.TeachingsTest do
     assert XenosPodcaster.Teachings.series_author(body) == "Dennis McCallum"
     assert XenosPodcaster.Teachings.series_author(body2) == "Ben Foust"
   end
+
+  test "provide default series author if none exists" do
+    {:ok, body} = File.read("test/support/359.html")
+    assert XenosPodcaster.Teachings.series_author(body) == "Various Teachers"
+  end
 end
