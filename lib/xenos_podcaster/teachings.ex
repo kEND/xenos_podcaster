@@ -57,6 +57,7 @@ defmodule XenosPodcaster.Teachings do
 
   def extract_date(nil), do: ""
   def extract_date(datestring) do
+    IO.puts(datestring)
     datestring = Regex.run(~r/.*(\d{4}-\d{2}-\d{2}).*/, datestring)
                   |> List.last()
 
@@ -132,9 +133,10 @@ defmodule XenosPodcaster.Teachings do
   end
 
   def date_and_id(title) do
-    captures = Regex.named_captures(~r/.*(?<datestring>\d{4}-\d{2}-\d{2}).*\((?<teaching_id>t\d+)\)/, title)
+    datestring = Regex.named_captures(~r/.*(?<datestring>\d{4}-\d{2}-\d{2}).*/, title)
+    teaching_id = Regex.named_captures(~r/.*(?<datestring>\d{4}-\d{2}-\d{2}).*\((?<teaching_id>t\d+)\)/, title)
 
-    {format_date(captures["datestring"]), captures["teaching_id"]}
+    {format_date(datestring["datestring"]), teaching_id["teaching_id"]}
   end
 
   def format_date(datestring) do

@@ -27,4 +27,9 @@ defmodule XenosPodcaster.TeachingsTest do
     {:ok, body} = File.read("test/support/359.html")
     assert XenosPodcaster.Teachings.series_author(body) == "Various Teachers"
   end
+
+  test "failing" do
+    {:ok, body} = File.read("test/support/258.html")
+    assert XenosPodcaster.Teachings.series_author(body) == "Dennis McCallum"
+  end
 end
