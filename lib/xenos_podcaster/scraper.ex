@@ -10,7 +10,7 @@ defmodule XenosPodcaster.Scraper do
   Get the teaching series page by URL
   """
   def get_teaching_series(series_no) do
-    case HTTPoison.get("https://www.xenos.org/teachings/?series=" <> series_no, [], [follow_redirect: true, max_redirect: 5]) do
+    case HTTPoison.get("https://web.archive.org/web/20200922144008/https://www.xenos.org/teachings/?series=" <> series_no, [], [follow_redirect: true, max_redirect: 5]) do
       {:ok, %HTTPoison.Response{status_code: 200, body: body}} ->
         {:ok, %{body: body}}
       {:ok, %HTTPoison.Response{status_code: 404}} ->

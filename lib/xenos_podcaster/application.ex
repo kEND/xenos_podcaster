@@ -11,6 +11,7 @@ defmodule XenosPodcaster.Application do
       # Start the endpoint when the application starts
       XenosPodcasterWeb.Endpoint,
       # Starts a worker by calling: XenosPodcaster.Worker.start_link(arg)
+      {Phoenix.PubSub, [name: XenosPodcaster.PubSub, adapter: Phoenix.PubSub.PG2]},
       # {XenosPodcaster.Worker, arg},
       XenosPodcaster.CacheSupervisor
     ]

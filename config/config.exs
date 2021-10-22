@@ -12,7 +12,7 @@ config :xenos_podcaster, XenosPodcasterWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "YqDFDAhu6iIQ5+IL6aFc7GTPizIMCjTqArwHO5J1iiGdglemMORZDgdN56b4rv+T",
   render_errors: [view: XenosPodcasterWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: XenosPodcaster.PubSub, adapter: Phoenix.PubSub.PG2]
+  pubsub_server: XenosPodcaster.PubSub
 
 # Configures Elixir's Logger
 config :logger, :console,

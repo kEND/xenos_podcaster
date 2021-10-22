@@ -7,9 +7,10 @@ defmodule XenosPodcaster.CacheSupervisor do
 
   def init(:ok) do
     children = [
-      worker(XenosPodcaster.SeriesCache, [[name: XenosPodcaster.SeriesCache]])
+      {XenosPodcaster.SeriesCache, [name: XenosPodcaster.SeriesCache]}
+      #      worker(, [[name: XenosPodcaster.SeriesCache]])
     ]
 
-    supervise(children, strategy: :one_for_one)
+    Supervisor.init(children, strategy: :one_for_one)
   end
 end
