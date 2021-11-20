@@ -14,7 +14,8 @@ defmodule XenosPodcaster.DwellScraper do
   def additional_pages(body) do
     case Floki.find(body, "[data-page]") do
       [] -> []
-      [ _ | rest] -> rest
+      [ _ | rest] ->
+        Enum.filter(rest, fn {"a", _, [x]} -> x in ["2", "3", "4"] end)
     end
   end
 end
