@@ -36,5 +36,17 @@ defmodule XenosPodcaster.DwellScraperTest do
       {:ok, %{body: body}} = DwellScraper.get_teaching_series(book, series_id)
       assert DwellScraper.additional_pages(body) == []
     end
+
+    @tag :pending
+    test "yields a list of individual teaching pages" do
+      book = "58"
+      series_id = "245"
+      {:ok, %{body: body}} = DwellScraper.get_teaching_series(book, series_id)
+
+      expected_teaching_page_urls = [
+      ]
+
+      assert DwellScraper.teaching_pages(body) == expected_teaching_page_urls
+    end
   end
 end

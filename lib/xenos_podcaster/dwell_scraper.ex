@@ -20,4 +20,8 @@ defmodule XenosPodcaster.DwellScraper do
         |> Enum.map(fn {"a", [{_, page_path}, _], _} -> page_path end)
     end
   end
+
+  def teaching_pages(body) do
+    Floki.find(body, "[data-key]")
+  end
 end
