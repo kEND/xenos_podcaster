@@ -23,8 +23,8 @@ defmodule XenosPodcaster.DwellScraperTest do
       {:ok, %{body: body}} = DwellScraper.get_teaching_series(book, series_id)
 
       expected_additional_pages = [
-        {"a", [{"href", "/?book=58&SeriesID=245&page=2&per-page=10"}, {"data-page", "1"}], ["2"]},
-        {"a", [{"href", "/?book=58&SeriesID=245&page=3&per-page=10"}, {"data-page", "2"}], ["3"]},
+        "/?book=58&SeriesID=245&page=2&per-page=10",
+        "/?book=58&SeriesID=245&page=3&per-page=10"
       ]
 
       assert DwellScraper.additional_pages(body) == expected_additional_pages

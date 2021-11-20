@@ -1,6 +1,7 @@
 defmodule XenosPodcaster.DwellScraper do
+  @site "https://teachings.dwellcc.org"
   def get_teaching_series(book, series_id) do
-    case HTTPoison.get("https://teachings.dwellcc.org/?book=" <> book <> "&" <> "SeriesID=" <> series_id, [], [follow_redirect: true, max_redirect: 5]) do
+    case HTTPoison.get(@site <> "/?book=" <> book <> "&" <> "SeriesID=" <> series_id, [], [follow_redirect: true, max_redirect: 5]) do
       {:ok, %HTTPoison.Response{status_code: 200, body: body}} ->
         {:ok, %{body: body}}
       {:ok, %HTTPoison.Response{status_code: 404}} ->
@@ -16,6 +17,7 @@ defmodule XenosPodcaster.DwellScraper do
       [] -> []
       [ _ | rest] ->
         Enum.filter(rest, fn {"a", _, [x]} -> x in ["2", "3", "4"] end)
+        |> Enum.map(fn {"a", [{_, page_path}, _], _} -> page_path end)
     end
   end
 end
