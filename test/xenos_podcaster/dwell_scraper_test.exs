@@ -9,13 +9,32 @@ defmodule XenosPodcaster.DwellScraperTest do
 
   alias XenosPodcaster.DwellScraper
 
-  describe "DwellScraper" do
-    test "hits main dwellcc.org teachings page" do
+  describe "DwellScraper hitting main dwellcc.org teachings page with book and series" do
+    test "finds Hebrews(58) 2015 series by Dennis (245)" do
       book = "58"
       series_id = "245"
       {:ok, %{body: body}} = DwellScraper.get_teaching_series(book, series_id)
       assert body =~ "Hebrews by Dennis McCallum (2015)"
     end
-  end
 
+    test "recognizes that there are pages of teachings" do
+      book = "58"
+      series_id = "245"
+      {:ok, %{body: body}} = DwellScraper.get_teaching_series(book, series_id)
+
+      expected_additional_pages = [
+        {"a", [{"href", "/?book=58&SeriesID=245&page=2&per-page=10"}, {"data-page", "1"}], ["2"]},
+        {"a", [{"href", "/?book=58&SeriesID=245&page=3&per-page=10"}, {"data-page", "2"}], ["3"]},
+      ]
+
+      assert DwellScraper.additional_pages(body) == expected_additional_pages
+    end
+
+    test "recognizes short series has no additional pages" do
+      book = "60"
+      series_id = "120"
+      {:ok, %{body: body}} = DwellScraper.get_teaching_series(book, series_id)
+      assert DwellScraper.additional_pages(body) == []
+    end
+  end
 end

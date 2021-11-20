@@ -9,4 +9,12 @@ defmodule XenosPodcaster.DwellScraper do
         IO.inspect reason
     end
   end
+
+
+  def additional_pages(body) do
+    case Floki.find(body, "[data-page]") do
+      [] -> []
+      [ _ | rest] -> rest
+    end
+  end
 end
