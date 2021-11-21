@@ -80,5 +80,26 @@ defmodule XenosPodcaster.SeriesDataTest do
 
       assert SeriesData.populate(body) == expected_series_data
     end
+
+    test "get urls to teaching pages on summary page" do
+      expected_teaching_urls = [
+        "/teaching/3049",
+        "/teaching/3059",
+        "/teaching/3062",
+        "/teaching/3076",
+        "/teaching/3083",
+        "/teaching/3088",
+        "/teaching/3094",
+        "/teaching/3099",
+        "/teaching/3104",
+        "/teaching/3127"
+      ]
+
+      book = "58"
+      series_id = "245"
+      {:ok, %{body: body}} = DwellScraper.get_teaching_series(book, series_id)
+
+      assert SeriesData.teaching_urls(body) == expected_teaching_urls
+    end
   end
 end
