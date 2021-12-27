@@ -38,6 +38,7 @@ defmodule XenosPodcaster.DwellScraperTest do
       expected_teaching_pages = %XenosPodcaster.SeriesData{
         book: "Hebrews",
         series: "Hebrews by Dennis McCallum (2015)",
+        subtitle: "Hebrews by Dennis McCallum (2015)",
         teachings: [],
         teachings_urls: [
           "/teaching/3049",
@@ -63,10 +64,11 @@ defmodule XenosPodcaster.DwellScraperTest do
           "/teaching/3224",
           "/teaching/3229",
           "/teaching/3236"
-        ]
+        ],
+        url: "https://teachings.dwellcc.org/series/245"
       }
 
-      assert DwellScraper.populate(body) == expected_teaching_pages
+      assert DwellScraper.populate(body, series_id) == expected_teaching_pages
     end
 
     test "recognizes short series has no additional pages" do
