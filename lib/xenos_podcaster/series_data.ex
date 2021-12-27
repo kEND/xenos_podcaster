@@ -12,6 +12,7 @@ defmodule XenosPodcaster.SeriesData do
   alias XenosPodcaster.DwellScraper
 
   def populate(floki_item) do
+    IO.inspect(floki_item)
     ["Book: " <> book | [series]] =
       Floki.find(floki_item, "#active-filters li") |> Floki.text() |> String.split(" Series: ")
 

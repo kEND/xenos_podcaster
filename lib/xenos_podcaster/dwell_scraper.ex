@@ -52,7 +52,9 @@ defmodule XenosPodcaster.DwellScraper do
     |> XenosPodcaster.SeriesData.set_author_image()
   end
 
-  def populate_series_and_teachings(body) do
+  def populate_series_and_teachings(book, series_id) do
+    {:ok, %{body: body}} = get_teaching_series(book, series_id)
+
     body
     |> populate()
     |> populate_teachings()
