@@ -4,6 +4,8 @@ defmodule XenosPodcaster.DwellScraper do
     get(@site <> "/?book=" <> book <> "&" <> "SeriesID=" <> series_id)
   end
 
+  #  maybe remove book and just go back to series id
+
   def get_teaching_page(path), do: get(@site <> path)
 
   defp get(url) do
@@ -30,8 +32,8 @@ defmodule XenosPodcaster.DwellScraper do
     end
   end
 
-  def populate(body) do
-    XenosPodcaster.SeriesData.populate(body)
+  def populate(body, series_id) do
+    XenosPodcaster.SeriesData.populate(body, series_id)
   end
 
   def populate_teachings(series_data) do
@@ -46,18 +48,20 @@ defmodule XenosPodcaster.DwellScraper do
     }
   end
 
-  def populate_author_and_image(series_data) do
+  def populate_author_image_and_date(series_data) do
     series_data
     |> XenosPodcaster.SeriesData.set_author()
     |> XenosPodcaster.SeriesData.set_author_image()
+    |> XenosPodcaster.SeriesData.set_series_date()
+    |> XenosPodcaster.SeriesData.set_teaching_urls()
   end
 
   def populate_series_and_teachings(book, series_id) do
     {:ok, %{body: body}} = get_teaching_series(book, series_id)
 
     body
-    |> populate()
+    |> populate(series_id)
     |> populate_teachings()
-    |> populate_author_and_image()
+    |> populate_author_image_and_date()
   end
 end

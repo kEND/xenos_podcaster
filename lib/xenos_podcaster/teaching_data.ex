@@ -5,10 +5,30 @@ defmodule XenosPodcaster.TeachingData do
     :image_url,
     :media_url,
     :teaching_title,
+    :xenos_teaching_id,
     :date,
     :verse_range
   ]
 
+  @spec populate(
+          binary
+          | {:ok,
+             binary
+             | [
+                 binary
+                 | {:comment, binary}
+                 | {:pi | binary, binary | list, list}
+                 | {:doctype, binary, binary, binary}
+               ]}
+        ) :: %XenosPodcaster.TeachingData{
+          author: binary,
+          date: binary,
+          image_url: binary,
+          media_url: binary,
+          teaching_title: binary,
+          url: <<_::88>>,
+          verse_range: binary
+        }
   def populate({:ok, floki_item}) do
     %__MODULE__{
       author: author(floki_item),
