@@ -10,13 +10,21 @@ defmodule XenosPodcaster.Scraper do
   Get the teaching series page by URL
   """
   def get_teaching_series(series_no) do
-    case HTTPoison.get("https://web.archive.org/web/20200922144008/https://www.xenos.org/teachings/?series=" <> series_no, [], [follow_redirect: true, max_redirect: 5]) do
+    case HTTPoison.get(
+           "https://web.archive.org/web/20200922144008/https://www.xenos.org/teachings/?series=" <>
+             series_no,
+           [],
+           follow_redirect: true,
+           max_redirect: 5
+         ) do
       {:ok, %HTTPoison.Response{status_code: 200, body: body}} ->
         {:ok, %{body: body}}
+
       {:ok, %HTTPoison.Response{status_code: 404}} ->
-        IO.puts "Not found :("
+        IO.puts("Not found :(")
+
       {:error, %HTTPoison.Error{reason: reason}} ->
-        IO.inspect reason
+        IO.inspect(reason)
     end
   end
 
@@ -24,13 +32,15 @@ defmodule XenosPodcaster.Scraper do
   Get the teaching pages by URL
   """
   def get_teaching_page(url) do
-    case HTTPoison.get(url, [], [follow_redirect: true, max_redirect: 5]) do
+    case HTTPoison.get(url, [], follow_redirect: true, max_redirect: 5) do
       {:ok, %HTTPoison.Response{status_code: 200, body: body}} ->
         {:ok, %{body: body}}
+
       {:ok, %HTTPoison.Response{status_code: 404}} ->
-        IO.puts "Not found :("
+        IO.puts("Not found :(")
+
       {:error, %HTTPoison.Error{reason: reason}} ->
-        IO.inspect reason
+        IO.inspect(reason)
     end
   end
 

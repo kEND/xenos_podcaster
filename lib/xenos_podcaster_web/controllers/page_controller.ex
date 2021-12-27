@@ -7,7 +7,8 @@ defmodule XenosPodcasterWeb.PageController do
   end
 
   def feed(conn, %{"series" => series_no}) do
-    series = SeriesCache.fetch(series_no, fn ->
+    series =
+      SeriesCache.fetch(series_no, fn ->
         Teachings.series(series_no)
       end)
 

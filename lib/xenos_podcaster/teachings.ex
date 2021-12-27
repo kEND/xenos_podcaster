@@ -7,11 +7,13 @@ defmodule XenosPodcaster.Teachings do
   def series(series_no \\ "346") do
     case Scraper.get_teaching_series(series_no) do
       {:ok, %{body: body}} ->
-        populate_series_data(%{body: body, series_no: series_no })
+        populate_series_data(%{body: body, series_no: series_no})
+
       {:ok, %{status_code: 404}} ->
-        IO.puts "Not found :("
+        IO.puts("Not found :(")
+
       {:error, %{reason: reason}} ->
-        IO.inspect reason
+        IO.inspect(reason)
     end
   end
 
@@ -56,10 +58,13 @@ defmodule XenosPodcaster.Teachings do
   end
 
   def extract_date(nil), do: ""
+
   def extract_date(datestring) do
     IO.puts(datestring)
-    datestring = Regex.run(~r/.*(\d{4}-\d{2}-\d{2}).*/, datestring)
-                  |> List.last()
+
+    datestring =
+      Regex.run(~r/.*(\d{4}-\d{2}-\d{2}).*/, datestring)
+      |> List.last()
 
     format_date(datestring)
   end
@@ -67,13 +72,16 @@ defmodule XenosPodcaster.Teachings do
   def teaching_page_urls(body) do
     body
     |> Floki.find("span.teaching-title a")
-    |> Enum.map(fn({_name, [{"href", href}, {"title", title}], _}) -> {"https://xenos.org" <> href, title} end)
+    |> Enum.map(fn {_name, [{"href", href}, {"title", title}], _} ->
+      {"https://xenos.org" <> href, title}
+    end)
   end
 
   def populate_series_data(%{body: body, series_no: series_no}) do
-    %{title: series_title(body), 
+    %{
+      title: series_title(body),
       author: series_author(body),
-      url: "https://xenos.org/teachings/?series=" <> series_no, 
+      url: "https://xenos.org/teachings/?series=" <> series_no,
       image_url: author_image_url(body),
       subtitle: series_subtitle(body),
       last_build_date: series_date(body),
@@ -85,10 +93,12 @@ defmodule XenosPodcaster.Teachings do
     case Scraper.get_teaching_page(url) do
       {:ok, %{body: body}} ->
         populate_teaching_data(%{body: body, url: url, title: title})
+
       {:ok, %{status_code: 404}} ->
-        IO.puts "Not found :("
+        IO.puts("Not found :(")
+
       {:error, %{reason: reason}} ->
-        IO.inspect reason
+        IO.inspect(reason)
     end
   end
 
@@ -97,7 +107,8 @@ defmodule XenosPodcaster.Teachings do
   def populate_teaching_data(%{body: body, url: url, title: title}) do
     {date, teaching_id} = date_and_id(title)
 
-    %{author: teaching_author(body),
+    %{
+      author: teaching_author(body),
       media_url: media_url(body),
       teaching_title: teaching_title(body),
       xenos_teaching_id: teaching_id,
@@ -134,12 +145,20 @@ defmodule XenosPodcaster.Teachings do
 
   def date_and_id(title) do
     datestring = Regex.named_captures(~r/.*(?<datestring>\d{4}-\d{2}-\d{2}).*/, title)
-    teaching_id = Regex.named_captures(~r/.*(?<datestring>\d{4}-\d{2}-\d{2}).*\((?<teaching_id>t\d+)\)/, title)
+
+    teaching_id =
+      Regex.named_captures(
+        ~r/.*(?<datestring>\d{4}-\d{2}-\d{2}).*\((?<teaching_id>t\d+)\)/,
+        title
+      )
 
     {format_date(datestring["datestring"]), teaching_id["teaching_id"]}
   end
 
   def format_date(datestring) do
-    Timex.format!(Timex.to_datetime(Timex.parse!(datestring, "{YYYY}-{0M}-{0D}"), "America/New_York"), "{RFC822}")
+    Timex.format!(
+      Timex.to_datetime(Timex.parse!(datestring, "{YYYY}-{0M}-{0D}"), "America/New_York"),
+      "{RFC822}"
+    )
   end
 end
