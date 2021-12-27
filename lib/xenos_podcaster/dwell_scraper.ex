@@ -29,4 +29,33 @@ defmodule XenosPodcaster.DwellScraper do
         |> Enum.map(fn {"a", [{_, page_path}, _], _} -> page_path end)
     end
   end
+
+  def populate(body) do
+    XenosPodcaster.SeriesData.populate(body)
+  end
+
+  def populate_teachings(series_data) do
+    %{
+      series_data
+      | teachings:
+          series_data.teachings_urls
+          |> Enum.map(fn path ->
+            {:ok, %{body: body}} = get_teaching_page(path)
+            XenosPodcaster.TeachingData.populate(body)
+          end)
+    }
+  end
+
+  def populate_author_and_image(series_data) do
+    series_data
+    |> XenosPodcaster.SeriesData.set_author()
+    |> XenosPodcaster.SeriesData.set_author_image()
+  end
+
+  def populate_series_and_teachings(body) do
+    body
+    |> populate()
+    |> populate_teachings()
+    |> populate_author_and_image()
+  end
 end
