@@ -70,13 +70,11 @@ defmodule XenosPodcaster.SeriesData do
 
   def set_teaching_urls(%__MODULE__{teachings: []} = series_data), do: series_data
   def set_teaching_urls(%__MODULE__{teachings: teachings, teachings_urls: teachings_urls} = series_data) do
-    IO.inspect(teachings_urls)
     teachings =
       Enum.zip_with(teachings, teachings_urls, fn teaching, url ->
         teaching = %{teaching | url: "https://teachings.dwellcc.org" <> url}
         %{teaching | xenos_teaching_id: url |> String.split("/") |> List.last()}
       end)
-    IO.inspect(teachings)
 
     %{series_data | teachings: teachings}
   end
