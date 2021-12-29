@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Xenos Podcaster</title>
+    <title>Dwell Podcaster</title>
     <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
   </head>
   <body>
@@ -15,8 +15,8 @@
             <li><a href="/feed/197">View feed for 197</a></li>
           </ul>
         </nav>
-        <a href="https://www.xenos.org/teachings/" class="phx-logo">
-          <img src="<%= Routes.static_path(@conn, "/images/xenos-logo-v1.png") %>" alt="Xenos Main Logo"/>
+        <a href="https://www.dwellcc.org/teachings/" class="phx-logo">
+          <img src="https://dwellcc.org/themes/custom/dwellcc/images/global/dwell-nav-logo.svg" alt="Dwell CC Main Logo"/>
         </a>
       </section>
     </header>
@@ -25,6 +25,16 @@
       <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
       <%= @inner_content %>
     </main>
+    <footer>
+      <section>
+        <p>
+          All teachings are Dwell's.  See their site for copyright info, etc.
+        </p>
+        <p>
+          This Podcaster site/service are not affiliated with Dwell Community Church.
+        </p>
+      </section>
+    </footer>
     <script type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
   </body>
 </html>
