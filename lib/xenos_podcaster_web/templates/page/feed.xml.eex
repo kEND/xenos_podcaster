@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
   <channel>
-    <title><%= make_safe(@series.title) %></title>
+    <title><%= make_safe(@series.series) %></title>
     <description>
-      <![CDATA[Bible <%= @series.title %> by <%= @series.author %>]]>
+      <![CDATA[Bible <%= @series.series %>]]>
     </description>
     <link><%= @series.url %></link>
     <language>en</language>
@@ -14,7 +14,7 @@
     <image>
       <link>https://xenos.org/teachings</link>
       <url><%= @series.image_url %></url>
-      <title><%= make_safe(@series.title) %> by <%= make_safe(@series.author) %></title>
+      <title><%= make_safe(@series.series) %></title>
     </image>
     <category>bible teaching</category>
     <category>exposition</category>
@@ -22,7 +22,7 @@
     <itunes:subtitle><%= make_safe(@series.subtitle) %></itunes:subtitle>
     <itunes:author><%= make_safe(@series.author) %></itunes:author>
     <itunes:summary>
-      <![CDATA[Bible <%= @series.title %> by <%= @series.author %>]]>
+      <![CDATA[Bible <%= @series.series %>]]>
     </itunes:summary>
     <itunes:explicit>no</itunes:explicit>
     <itunes:keywords>bible, christianity, exposition</itunes:keywords>
