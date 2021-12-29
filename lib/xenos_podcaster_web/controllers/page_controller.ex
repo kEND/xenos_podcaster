@@ -1,15 +1,18 @@
 defmodule XenosPodcasterWeb.PageController do
   use XenosPodcasterWeb, :controller
-  alias XenosPodcaster.{Teachings, SeriesCache}
+  alias XenosPodcaster.DwellScraper
+  # alias XenosPodcaster.SeriesCache
 
   def index(conn, _params) do
     render(conn, "index.html")
   end
 
-  def feed(conn, %{"series" => series_no}) do
-    series = SeriesCache.fetch(series_no, fn ->
-        Teachings.series(series_no)
-      end)
+
+  def feed(conn, %{"series" => series_id}) do
+    series =
+      # SeriesCache.fetch(series_id, fn ->
+        DwellScraper.populate_series_and_teachings(series_id)
+      # end)
 
     conn
     |> put_layout(:none)

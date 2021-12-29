@@ -2,10 +2,14 @@ defmodule XenosPodcaster.SeriesCache do
   use GenServer
 
   def start_link(opts \\ []) do
-    GenServer.start_link(__MODULE__, [
-      {:ets_table_name, :series_table},
-      {:log_limit, 1_000_000}
-    ], opts)
+    GenServer.start_link(
+      __MODULE__,
+      [
+        {:ets_table_name, :series_table},
+        {:log_limit, 1_000_000}
+      ],
+      opts
+    )
   end
 
   def fetch(series, default_function) do
@@ -22,7 +26,7 @@ defmodule XenosPodcaster.SeriesCache do
     end
   end
 
-  defp set(series, value) do 
+  defp set(series, value) do
     GenServer.call(__MODULE__, {:set, series, value})
   end
 
