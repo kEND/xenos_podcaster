@@ -17,7 +17,7 @@ defmodule XenosPodcasterWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
-    get "/feed/:book/:series", PageController, :feed
+    get "/feed/:series", PageController, :feed
   end
 
   # Other scopes may use custom stacks.

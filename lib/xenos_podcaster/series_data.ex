@@ -1,7 +1,6 @@
 defmodule XenosPodcaster.SeriesData do
   defstruct [
     :series,
-    :book,
     :author,
     :url,
     :last_build_date,
@@ -13,20 +12,22 @@ defmodule XenosPodcaster.SeriesData do
 
   alias XenosPodcaster.DwellScraper
 
-  def populate(floki_item, series_id) do
-    ["Book: " <> book | [series]] =
-      Floki.find(floki_item, "#active-filters li") |> Floki.text() |> String.split(" Series: ")
-
+  def populate(floki_item, series) do
     additional_pages = DwellScraper.additional_pages(floki_item)
 
     %__MODULE__{
-      series: String.trim(series),
-      book: book,
-      url: "https://teachings.dwellcc.org/series/" <> series_id,
-      subtitle: String.trim(series),
+      series: series_title(floki_item),
+      url: "https://teachings.dwellcc.org/series/" <> series,
+      subtitle: series_title(floki_item),
       teachings_urls: teaching_urls(floki_item) ++ teaching_urls(additional_pages),
       teachings: []
     }
+  end
+
+  def series_title(floki_item) do
+    floki_item
+    |> Floki.find(".series-title")
+    |> Floki.text()
   end
 
   def teaching_urls(page_urls) when is_list(page_urls) do

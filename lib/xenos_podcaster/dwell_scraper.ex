@@ -1,10 +1,8 @@
 defmodule XenosPodcaster.DwellScraper do
   @site "https://teachings.dwellcc.org"
-  def get_teaching_series(book, series_id) do
-    get(@site <> "/?book=" <> book <> "&" <> "SeriesID=" <> series_id)
+  def get_teaching_series(series_id) do
+    get(@site <> "/series/" <> series_id)
   end
-
-  #  maybe remove book and just go back to series id
 
   def get_teaching_page(path), do: get(@site <> path)
 
@@ -56,8 +54,8 @@ defmodule XenosPodcaster.DwellScraper do
     |> XenosPodcaster.SeriesData.set_teaching_urls()
   end
 
-  def populate_series_and_teachings(book, series_id) do
-    {:ok, %{body: body}} = get_teaching_series(book, series_id)
+  def populate_series_and_teachings(series_id) do
+    {:ok, %{body: body}} = get_teaching_series(series_id)
 
     body
     |> populate(series_id)

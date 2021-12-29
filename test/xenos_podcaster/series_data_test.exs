@@ -5,11 +5,10 @@ defmodule XenosPodcaster.SeriesDataTest do
   alias XenosPodcaster.SeriesData
 
   describe "SeriesData.populate/2" do
-    test "set series and book" do
+    test "set series" do
       expected_series_data = %SeriesData{
         series: "Hebrews by Dennis McCallum (2015)",
         subtitle: "Hebrews by Dennis McCallum (2015)",
-        book: "Hebrews",
         teachings_urls: [
           "/teaching/3049",
           "/teaching/3059",
@@ -39,9 +38,8 @@ defmodule XenosPodcaster.SeriesDataTest do
         url: "https://teachings.dwellcc.org/series/245"
       }
 
-      book = "58"
       series_id = "245"
-      {:ok, %{body: body}} = DwellScraper.get_teaching_series(book, series_id)
+      {:ok, %{body: body}} = DwellScraper.get_teaching_series(series_id)
 
       assert SeriesData.populate(body, series_id) == expected_series_data
     end
@@ -55,9 +53,8 @@ defmodule XenosPodcaster.SeriesDataTest do
         "/teaching/3000"
       ]
 
-      book = "60"
       series_id = "120"
-      {:ok, %{body: body}} = DwellScraper.get_teaching_series(book, series_id)
+      {:ok, %{body: body}} = DwellScraper.get_teaching_series(series_id)
 
       assert SeriesData.teaching_urls(body) == expected_teaching_urls
     end
@@ -89,9 +86,8 @@ defmodule XenosPodcaster.SeriesDataTest do
         "/teaching/3236"
       ]
 
-      book = "58"
       series_id = "245"
-      {:ok, %{body: body}} = DwellScraper.get_teaching_series(book, series_id)
+      {:ok, %{body: body}} = DwellScraper.get_teaching_series(series_id)
 
       additional_pages = DwellScraper.additional_pages(body)
       teaching_urls = SeriesData.teaching_urls(body)

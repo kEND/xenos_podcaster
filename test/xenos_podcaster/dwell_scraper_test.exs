@@ -9,34 +9,18 @@ defmodule XenosPodcaster.DwellScraperTest do
 
   alias XenosPodcaster.DwellScraper
 
-  describe "DwellScraper hitting main dwellcc.org teachings page with book and series" do
-    test "finds Hebrews(58) 2015 series by Dennis (245)" do
-      book = "58"
+  describe "DwellScraper hitting main dwellcc.org teachings page with  series" do
+    test "finds Hebrews 2015 series by Dennis (245)" do
       series_id = "245"
-      {:ok, %{body: body}} = DwellScraper.get_teaching_series(book, series_id)
+      {:ok, %{body: body}} = DwellScraper.get_teaching_series(series_id)
       assert body =~ "Hebrews by Dennis McCallum (2015)"
     end
 
-    test "recognizes that there are pages of teachings" do
-      book = "58"
-      series_id = "245"
-      {:ok, %{body: body}} = DwellScraper.get_teaching_series(book, series_id)
-
-      expected_additional_pages = [
-        "/?book=58&SeriesID=245&page=2&per-page=10",
-        "/?book=58&SeriesID=245&page=3&per-page=10"
-      ]
-
-      assert DwellScraper.additional_pages(body) == expected_additional_pages
-    end
-
     test "should yield a list of teaching pages by url" do
-      book = "58"
       series_id = "245"
-      {:ok, %{body: body}} = DwellScraper.get_teaching_series(book, series_id)
+      {:ok, %{body: body}} = DwellScraper.get_teaching_series(series_id)
 
       expected_teaching_pages = %XenosPodcaster.SeriesData{
-        book: "Hebrews",
         series: "Hebrews by Dennis McCallum (2015)",
         subtitle: "Hebrews by Dennis McCallum (2015)",
         teachings: [],
@@ -72,9 +56,8 @@ defmodule XenosPodcaster.DwellScraperTest do
     end
 
     test "recognizes short series has no additional pages" do
-      book = "60"
       series_id = "120"
-      {:ok, %{body: body}} = DwellScraper.get_teaching_series(book, series_id)
+      {:ok, %{body: body}} = DwellScraper.get_teaching_series(series_id)
       assert DwellScraper.additional_pages(body) == []
     end
   end

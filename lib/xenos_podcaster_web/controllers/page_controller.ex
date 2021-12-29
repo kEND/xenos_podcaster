@@ -8,10 +8,10 @@ defmodule XenosPodcasterWeb.PageController do
   end
 
 
-  def feed(conn, %{"book" => book, "series" => series_id}) do
+  def feed(conn, %{"series" => series_id}) do
     series =
       # SeriesCache.fetch(series_id, fn ->
-        DwellScraper.populate_series_and_teachings(book, series_id)
+        DwellScraper.populate_series_and_teachings(series_id)
       # end)
 
     conn
