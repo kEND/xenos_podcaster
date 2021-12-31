@@ -1,9 +1,25 @@
 <section class="phx-hero">
   <h1><%= gettext "Welcome to %{name}!", name: "Podcaster" %></h1>
-  <p>Consuming old html links to teachings<br/>and broadcasting them as a podcast feed</p>
-  <p>Simply navigate to /feed/120 where series number can be found at<br/>
-      https://teachings.dwellcc.org/series/120</p>
-  <p><strong>120</strong> is the series number.</p>
+  <p>Consuming links to teachings and broadcasting them as a podcast feed.</p>
+  <ul>
+    <li>
+      Find the series you want as a podcast at the Dwell CC teachings page.
+    </li>
+    <li>
+      Copy the number of the series, for example <strong>120</strong> <br/>from https://teachings.dwellcc.org/series/120.
+    </li>
+    <li>
+      Simply navigate to /feed/:series_id, e.g. /feed/120 in this site.
+    </li>
+    <li>
+      Copy the URL from the address bar and paste it into your podcast app.
+    </li>
+  </ul>
+  <hr/>
+  <p>Most podcast apps support adding a podcast by URL to a podcast feed.</p>
+  <p>I use Overcast on iOS following these <a href="https://islandinthenet.com/how-to-add-rss-feed-in-overcast-fm/" target="_blank">instructions</a>.</p>
+  <p>I quickly edit the settings on the podcast teaching series, sorting by oldest to newest and setting deletions to manual.  With a couple taps, you can download each teaching in the series and you're on your way!
+  </p>
 </section>
 
 <section class="row">
