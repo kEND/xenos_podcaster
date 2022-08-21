@@ -47,7 +47,7 @@ defmodule XenosPodcaster.TeachingData do
   end
 
   def author(floki_item) do
-    Floki.find(floki_item, ".author-name") |> Floki.text() |> String.trim()
+    Floki.find(floki_item, ".author-name") |> Floki.text() |> String.trim() |> String.replace("&"," and ")
   end
 
   def url(_floki_item), do: "stubbed url"
